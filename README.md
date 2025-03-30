@@ -43,7 +43,7 @@ The experimental data we use is from the SUN RGB-D dataset. For downloading the 
 （1）将2D检测文件sunrgbd_rgb_train_yolov9-e_confThres0.362_IouThres0.45和sunrgbd_rgb_val_yolov9-e_confThres0.362_IouThres0.45放到正确位置。所谓正确位置，就是sunrgbd_data_utils.py中，self.train_bbox_list = 以及self.val_bbox_list = 后的位置，你也可以修改这个位置。
 （2）使用sunrgbd_data_utils.py替换原来的/root/mmdetection3d/tools/dataset_converters/sunrgbd_data_utils.py，装载EF模块
 （3）将votenet_8xb16_sunrgbd-3d-msg.py放到/root/mmdetection3d/configs/votenet/中，将votenet_msg.py放到/root/mmdetection3d/configs/_base_/models/中。
-（4）将pointnet2_sa_msg.py放到/root/mmdetection3d/mmdet3d/models/backbones/中。装载MS模块。注意我们直接将SA×4固定在了骨干中，而未设定新的颈部网络，如果需要请自行修改。
+（4）将pointnet2_sa_msg.py放到/root/mmdetection3d/mmdet3d/models/backbones/中。装载MS模块。注意我们直接将FP×2固定在了骨干中，而未设定新的颈部网络，如果需要请自行修改。
 
 
 Regarding the deployment of our experiment, there are two methods:
@@ -68,7 +68,7 @@ Place votenet_8xb16_sunrgbd-3d-msg.py into /root/mmdetection3d/configs/votenet/,
 place votenet_msg.py into /root/mmdetection3d/configs/_base_/models/.
 
 Place pointnet2_sa_msg.py into /root/mmdetection3d/mmdet3d/models/backbones/ to enable the MS module.
-Note that we have fixed the SA×4 structure in the backbone and have not configured a new neck network. If needed, please modify it accordingly.
+Note that we have fixed the FP×2 structure in the backbone and have not configured a new neck network. If needed, please modify it accordingly.
 
 PS : 注意要先安装MMdetection3D再使用我们的代码，同时需要使用显存≥32GB的显卡，因为多尺度结构导致需要更高的现存。
 
