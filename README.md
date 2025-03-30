@@ -29,7 +29,9 @@ If you use our code, please consider applying our paper
   year      = {2025},
   doi       = {10.1007/s10489-025-06492-4}
 }
+
 APA : Zhang, X., He, Y., Song, C., & et al. (2025). Enhanced frustum multi-scale VoteNet for 3D object detection in cluttered indoor scene. Applied Intelligence, 55, 588. https://doi.org/10.1007/s10489-025-06492-4
+
 IEEE : X. Zhang, Y. He, C. Song et al., "Enhanced frustum multi-scale VoteNet for 3D object detection in cluttered indoor scene," Applied Intelligence, vol. 55, p. 588, Mar. 2025. doi: 10.1007/s10489-025-06492-4
 
 
