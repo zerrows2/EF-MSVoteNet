@@ -71,4 +71,5 @@ Place pointnet2_sa_msg.py into /root/mmdetection3d/mmdet3d/models/backbones/ to 
 Note that we have fixed the SA×4 structure in the backbone and have not configured a new neck network. If needed, please modify it accordingly.
 
 PS : 注意要先安装MMdetection3D再使用我们的代码，同时需要使用显存≥32GB的显卡，因为多尺度结构导致需要更高的现存。
+
 P.S.: Please make sure to install MMDetection3D before using our code. Additionally, a GPU with at least 32GB of memory is required, as the multi-scale structure demands higher memory capacity.
