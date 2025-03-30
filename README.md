@@ -1,4 +1,5 @@
 我们的论文“Enhanced frustum multi-scale VoteNet for 3D object detection in cluttered indoor scene” 已被 Applied Intelligence (SCI, JCR Q2) 接受。DOI：10.1007/s10489-025-06492-4 🎉
+
 Our paper "Enhanced frustum multi-scale VoteNet for 3D object detection in cluttered indoor scene" has been accepted by Applied Intelligence (SCI, JCR Q2). DOI: 10.1007/s10489-025-06492-4 🎉
 
 165350.log 为训练日志，34轮时达到最佳。
