@@ -2,21 +2,6 @@
 
 Our paper "Enhanced frustum multi-scale VoteNet for 3D object detection in cluttered indoor scene" has been accepted by Applied Intelligence (SCI, JCR Q2). DOI: 10.1007/s10489-025-06492-4 🎉
 
-165350.log 为训练日志，34轮时达到最佳。
-ef-votenet_sunrgbd-3d-msg.py 为配置文件，可以看到我们的详细配置情况。
-×3~×6为EF强化倍数不同时，EF-MSVoteNet算法的变化情况。
-2D_ 为使用YOLOv9-E 以SUN RGB-D 2D train为训练集 val为验证集得到的数据。
-我们的实验基于MMdetection3D框架开发，容易复现和使用。
-
-165350.log is the training log, and it reached the best performance at the 34th epoch.
-ef-votenet_sunrgbd-3d-msg.py is the configuration file, where you can see our detailed setup.
-The variations of the EF-MSVoteNet algorithm with different EF enhancement factors ranging from ×3 to ×6. 
-The 2D_ data is obtained using YOLOv9-E, trained on the SUN RGB-D 2D train dataset, and validated on the val dataset.
-Our experiments are developed based on the MMDetection3D framework, making them easy to reproduce and use. 
-
-我们采用的实验数据为SUN RGB-D数据，数据集以及数据集工具包的下载请参照MMdetection3d:https://github.com/open-mmlab/mmdetection3d/blob/main/data/sunrgbd/README.md
-The experimental data we use is from the SUN RGB-D dataset. For downloading the dataset and toolkit, please refer to MMDetection3D: https://github.com/open-mmlab/mmdetection3d/blob/main/data/sunrgbd/README.md.
-
 如果你使用我们的代码，请考虑应用我们的论文
 If you use our code, please consider applying our paper
 
@@ -34,6 +19,21 @@ APA : Zhang, X., He, Y., Song, C., & et al. (2025). Enhanced frustum multi-scale
 
 IEEE : X. Zhang, Y. He, C. Song et al., "Enhanced frustum multi-scale VoteNet for 3D object detection in cluttered indoor scene," Applied Intelligence, vol. 55, p. 588, Mar. 2025. doi: 10.1007/s10489-025-06492-4
 
+
+165350.log 为训练日志，34轮时达到最佳。
+ef-votenet_sunrgbd-3d-msg.py 为配置文件，可以看到我们的详细配置情况。
+×3~×6为EF强化倍数不同时，EF-MSVoteNet算法的变化情况。
+2D_ 为使用YOLOv9-E 以SUN RGB-D 2D train为训练集 val为验证集得到的数据。
+我们的实验基于MMdetection3D框架开发，容易复现和使用。
+
+165350.log is the training log, and it reached the best performance at the 34th epoch.
+ef-votenet_sunrgbd-3d-msg.py is the configuration file, where you can see our detailed setup.
+The variations of the EF-MSVoteNet algorithm with different EF enhancement factors ranging from ×3 to ×6. 
+The 2D_ data is obtained using YOLOv9-E, trained on the SUN RGB-D 2D train dataset, and validated on the val dataset.
+Our experiments are developed based on the MMDetection3D framework, making them easy to reproduce and use. 
+
+我们采用的实验数据为SUN RGB-D数据，数据集以及数据集工具包的下载请参照MMdetection3d:https://github.com/open-mmlab/mmdetection3d/blob/main/data/sunrgbd/README.md
+The experimental data we use is from the SUN RGB-D dataset. For downloading the dataset and toolkit, please refer to MMDetection3D: https://github.com/open-mmlab/mmdetection3d/blob/main/data/sunrgbd/README.md.
 
 关于部署我们的实验，有两个方法：
 （1）使用autodl服务器，我们将直接分享镜像给您，这样就可以直接复现基于MM3D开发的EF-MSVoteNet关于SUN RGB-D的检测部分。如有需要，请email联系论文作者。——我们推荐这个方法，可以快速帮你部署模型。
